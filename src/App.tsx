@@ -1,6 +1,7 @@
 import Navigation from './components/Navigation';
 import Hero from './components/Hero';
 import Services from './components/Services';
+import ProjectCarousel from './components/ProjectCarousel';
 import Footer from './components/Footer';
 import MobileContactFab from './components/MobileContactFab';
 
@@ -11,6 +12,7 @@ function App() {
       <main className="flex-grow">
         <Hero />
         <Services />
+        <ProjectCarousel />
 
         {/* About / Credentials Section Inline */}
         <section id="about" className="py-20 bg-slate-100 border-t border-slate-200">

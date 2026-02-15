@@ -22,3 +22,14 @@
     background-size: 20px 20px;
   }
 }
+
+/* Swiper overrides */
+.swiper-button-next,
+.swiper-button-prev {
+  color: var(--color-brand-green) !important;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  color: var(--color-brand-lime) !important;
+}

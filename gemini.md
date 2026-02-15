@@ -36,7 +36,7 @@
 - Master’s in Data Science (Proprietor of LaederData.com)
 
 ## SEO & Local Authority Instructions
-- **Title Tag Pattern:** [Primary Service] in [Primary City/Region], PA | Laeder Consulting.
+- **Title Tag Pattern:** [Service]  in [Primary City/Region], PA | Laeder Consulting.
 - **Header Strategy (H1):** Always include "Service + Location" (e.g., "Structural Engineering in Central Pennsylvania").
 - **Footer Requirements:** Include the full Physical Address, Phone Number, and a Google Maps embed to send strong local signals.
 - **Structured Data (Schema):** Implement JSON-LD "ProfessionalService" or "EngineeringBusiness" schema. 
