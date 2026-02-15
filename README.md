@@ -90,9 +90,9 @@ src/
 - [x] VPS API integration architecture
 - [x] Production deployment ready
 
-### 🔄 In Progress
-- [ ] **VPS API Authentication** - Waiting for auth implementation
-- [ ] **Project Content** - Awaiting real project photos and data
+### ✅ Recently Completed (2026-02-15)
+- [x] **VPS API Authentication** - HTTP auth implemented at nginx level
+- [x] **Project Content** - 5 Philadelphia Make-Safe facade bracing project images live
 
 ### 📋 Future Enhancements
 - [ ] Contact form implementation
