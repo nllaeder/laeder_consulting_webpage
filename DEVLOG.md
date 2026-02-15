@@ -26,10 +26,40 @@
   - `Footer.tsx`: Credential-focused footer (PE, CGBE, CEM) with contact info.
   - `MobileContactFab.tsx`: Fixed floating action buttons for mobile conversion optimization (Call/Text).
 
+## 2026-02-15: Project Photo Carousel Implementation
+
+### Achievements
+- **Project Carousel**: Implemented responsive photo carousel with Swiper 12.1.1 integration.
+- **Lightbox Modal**: Created full-screen image viewer with keyboard navigation and smooth transitions.
+- **API Integration**: Connected to VPS-hosted project manifest and image serving endpoints.
+- **Error Handling**: Graceful degradation - carousel section hidden when API unavailable.
+- **Brand Integration**: Applied brand colors (#2f5854, #8fba40) to navigation arrows and hover states.
+- **Responsive Design**: Adaptive grid (1→2→3→4 slides) based on screen size breakpoints.
+
+### Technical Implementation
+- **New Components**:
+  - `ProjectCarousel.tsx`: Main carousel component with Swiper integration and API fetching.
+  - `ProjectLightbox.tsx`: Full-screen modal with navigation, loading states, and keyboard controls.
+- **API Architecture**:
+  - Production: `https://projects.laederconsulting.com/manifest.json`
+  - Development: `http://localhost:8101/manifest.json`
+  - Image paths: `/images/thumbs/` and `/images/full/`
+- **Environment Configuration**: Separate dev/production API endpoints via `.env` files.
+- **Dependencies Added**: Swiper 12.1.1 for carousel functionality.
+
+### Integration Status
+- **Website Status**: ✅ Complete and deployed to main branch (commit `502d637`)
+- **VPS Status**: 🔄 Waiting for API authentication implementation
+- **Current Behavior**: Carousel hidden due to 403 Forbidden (expected until auth added)
+- **Testing**: Ready for immediate activation once VPS returns 200 OK from manifest endpoint
+
 ### Future Work / To-Do
+- [x] ~~**Projects Gallery**: Create a page or section to showcase past engineering projects.~~ ✅ **COMPLETED**
+- [ ] **VPS Authentication**: Implement auth system for project images API
+- [ ] **Content Management**: Add admin interface for project uploads (future enhancement)
+- [ ] **Image Optimization**: Consider WebP format and responsive image sizes
 - [ ] **Content Refinement**: Replace placeholder text in `Services.tsx` and `Hero.tsx` with final copy if needed.
 - [ ] **Contact Form**: Consider adding a full contact form for email inquiries (currently handled via `mailto` link).
 - [ ] **Testimonials**: Add a section for client reviews/social proof.
-- [ ] **Projects Gallery**: Create a page or section to showcase past engineering projects.
 - [ ] **Accessibility**: Audit color contrast and screen reader compatibility.
 - [ ] **Analytics**: Integrate Google Analytics or Cloudflare Web Analytics.
