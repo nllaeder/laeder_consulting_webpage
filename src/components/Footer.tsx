@@ -6,7 +6,10 @@ export default function Footer() {
                 <div>
                     <h3 className="text-xl font-bold mb-4">Laeder Consulting</h3>
                     <p className="opacity-80 text-sm leading-relaxed">
-                        Professional Engineering services dedicated to structural integrity, safety, and sustainable design.
+                        Professional Engineering services dedicated to structural integrity, safety, and sustainable design. Registered Design Professional and Licensed Special Inspector serving Central Pennsylvania and Philadelphia.
+                    </p>
+                    <p className="opacity-70 text-xs leading-relaxed mt-3">
+                        Special inspection services for make-safe permits, reinforced concrete, structural stability assessments, underpinning, and wood construction.
                     </p>
                     <div className="mt-6 flex space-x-4">
                         {/* Simple Social or contact icons could go here */}
@@ -22,6 +25,14 @@ export default function Footer() {
                         </li>
                         <li className="flex items-center">
                             <span className="w-2 h-2 bg-brand-lime rounded-full mr-2"></span>
+                            Registered Design Professional — Philadelphia
+                        </li>
+                        <li className="flex items-center">
+                            <span className="w-2 h-2 bg-brand-lime rounded-full mr-2"></span>
+                            Licensed Special Inspector — Philadelphia
+                        </li>
+                        <li className="flex items-center">
+                            <span className="w-2 h-2 bg-brand-lime rounded-full mr-2"></span>
                             Certified Green Building Engineer (CGBE)
                         </li>
                         <li className="flex items-center">
@@ -30,7 +41,7 @@ export default function Footer() {
                         </li>
                         <li className="flex items-center">
                             <span className="w-2 h-2 bg-brand-lime rounded-full mr-2"></span>
-                            Master’s in Data Science &mdash; <a href="https://laederdata.com" target="_blank" rel="noopener noreferrer" className="ml-1 underline hover:text-brand-lime">Visit LaederData.com</a>
+                            Master's in Data Science &mdash; <a href="https://laederdata.com" target="_blank" rel="noopener noreferrer" className="ml-1 underline hover:text-brand-lime">Visit LaederData.com</a>
                         </li>
                     </ul>
                 </div>
@@ -42,7 +53,7 @@ export default function Footer() {
                             <svg className="w-5 h-5 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
                             <span>
                                 Harrisburg, PA<br />
-                                <span className="text-sm opacity-80">Serving Central Pennsylvania</span>
+                                <span className="text-sm opacity-80">Serving Central Pennsylvania & Philadelphia</span>
                             </span>
                         </li>
                         <li>
@@ -88,3 +99,4 @@ export default function Footer() {
         </footer>
     );
 }
+

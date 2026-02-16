@@ -1,5 +1,5 @@
 # Brand Persona: Laeder Consulting
-**Identity:** A multidisciplinary engineering firm led by a Professional Engineer (PE) specializing in structural forensics, high-end residential design, and sustainable compliance.
+**Identity:** A multidisciplinary engineering firm led by a Professional Engineer (PE) specializing in structural forensics, high-end residential design, special inspections, and sustainable compliance. Registered Design Professional and Licensed Special Inspector in Philadelphia.
 **Voice:** Precise, authoritative, and direct. The site should feel like a trusted technical resource, not a generic marketing page.
 
 ## Visual Identity & Assets
@@ -43,10 +43,11 @@
 7. Mobile FAB (call/text buttons)
 
 ## Service Architecture
-1. **Structural & Architectural Engineering:** Residential estate design, load-bearing wall removal, floorplan modifications, and settling additions.
-2. **Forensic Inspections & Certifications:** Professional sign-offs for unpermitted work, foundation movement analysis, and structural failure remediation (beams/joists).
-3. **Accessibility & Vertical Transportation:** Structural engineering and support for residential elevators, wheelchair lifts, and chair lifts.
-4. **PA DEP SPEED Program (Part 102):** Qualified Person services for BMP/PCSM SCM construction observation and critical stage inspections.
+1. **Structural & Architectural Engineering:** Residential design, load-bearing wall removal, floorplan modifications, and settling additions.
+2. **Special Inspections & Structural Inspections:** Licensed Special Inspector for reinforced concrete, structural stability of existing buildings, underpinning, and wood construction. Make-safe permit inspections and structural assessments in Philadelphia.
+3. **Forensic Analysis:** Professional sign-offs for unpermitted work, foundation movement analysis, and structural failure remediation.
+4. **Accessibility & Vertical Transportation:** Structural engineering and support for residential elevators, wheelchair lifts, and chair lifts.
+5. **PA DEP SPEED Program (Part 102):** Qualified Person services for BMP/PCSM SCM construction observation and critical stage inspections.
 
 ## Conversion Strategy
 - **Goal:** Direct Lead Generation (Call/Text/Email).
@@ -57,17 +58,20 @@
 
 ## Technical Credentials
 - Licensed Professional Engineer (PE)
+- Registered Design Professional — Philadelphia
+- Licensed Special Inspector — Philadelphia (Reinforced Concrete, Structural Stability, Underpinning, Wood Construction)
 - Certified Green Building Engineer (CGBE)
 - Certified Energy Manager (CEM)
-- Master’s in Data Science (Proprietor of LaederData.com)
+- Master's in Data Science (Proprietor of LaederData.com)
 
 ## SEO & Local Authority Instructions
 - **Title Tag Pattern:** [Service]  in [Primary City/Region], PA | Laeder Consulting.
-- **Header Strategy (H1):** Always include "Service + Location" (e.g., "Structural Engineering in Central Pennsylvania").
+- **Header Strategy (H1):** Always include "Service + Location" (e.g., "Structural Engineering in Central Pennsylvania & Philadelphia").
 - **Footer Requirements:** Include the full Physical Address, Phone Number, and a Google Maps embed to send strong local signals.
-- **Structured Data (Schema):** Implement JSON-LD "ProfessionalService" or "EngineeringBusiness" schema. 
-  - Required fields: Name, Address, Phone (NAP), Geo-coordinates, and opening hours.
-- **Service-Area Pages:** Generate a template for location-specific landing pages (e.g., "Structural Inspections in Harrisburg, PA; York, PA; Lebanon, PA; Lancaster, PA; Reading, PA; Chester County, PA; Berks County, PA; Dauphin County, PA; Lancaster County, PA; Lebanon County, PA; York County, PA").
+- **Structured Data (Schema):** Implement JSON-LD "ProfessionalService" or "EngineeringBusiness" schema.
+  - Required fields: Name, Address, Phone (NAP), Geo-coordinates, opening hours, hasCredential, makesOffer.
+- **Service-Area Pages:** Generate a template for location-specific landing pages (e.g., "Structural Inspections in Harrisburg, PA; York, PA; Lebanon, PA; Lancaster, PA; Reading, PA; Chester County, PA; Berks County, PA; Dauphin County, PA; Lancaster County, PA; Lebanon County, PA; York County, PA; Philadelphia, PA").
+- **Philadelphia SEO Terms:** Optimize for: Special Inspection, Special Inspector, Licensed Design Professional, Make-Safe Permits, Registered Design Professional, Structural Inspection Philadelphia.
 - **Performance:** Maintain a "Mobile-First" build. Target a Google PageSpeed Insights score of 90+ for mobile.
 
 ## Development Instructions for Future AI Agents

@@ -57,6 +57,7 @@
 ### Future Work / To-Do
 - [x] ~~**Projects Gallery**: Create a page or section to showcase past engineering projects.~~ ✅ **COMPLETED**
 - [x] ~~**VPS Authentication**: Implement auth system for project images API~~ ✅ **COMPLETED**
+- [x] ~~**Philadelphia Credentials**: Add Registered Design Professional & Licensed Special Inspector~~ ✅ **COMPLETED**
 - [ ] **Content Management**: Add admin interface for project uploads (future enhancement)
 - [ ] **Image Optimization**: Consider WebP format and responsive image sizes
 - [ ] **Content Refinement**: Replace placeholder text in `Services.tsx` and `Hero.tsx` with final copy if needed.
@@ -64,3 +65,24 @@
 - [ ] **Testimonials**: Add a section for client reviews/social proof.
 - [ ] **Accessibility**: Audit color contrast and screen reader compatibility.
 - [ ] **Analytics**: Integrate Google Analytics or Cloudflare Web Analytics.
+- [ ] **Additional Service Cards**: Grid supports 8 cards (2 rows of 4); 3 slots available for new services.
+
+## 2026-02-16: Professional Licenses & Philadelphia SEO
+
+### Achievements
+- **Registered Design Professional**: Added Philadelphia RDP credential across all site sections
+- **Licensed Special Inspector**: Added Philadelphia LSI credential with inspection categories (Reinforced Concrete, Structural Stability of Existing Buildings, Underpinning, Wood Construction)
+- **New Service Card**: "Special Inspections & Structural Inspections" targeting Philadelphia make-safe permits and special inspection search terms
+- **Renamed Service**: "Forensic Inspections" → "Forensic Analysis" to differentiate from Special Inspections
+- **SEO Optimization**: Updated title tag, meta description, and JSON-LD structured data with Philadelphia-specific keywords
+- **Geographic Expansion**: Philadelphia added as co-primary market alongside Central PA in Hero, Footer, and structured data
+- **Grid Restructuring**: Services grid now supports 2 rows of 4 cards (5 active, 3 slots reserved for future services)
+
+### Files Modified
+- `index.html` — Title tag, meta description, schema.org structured data (Philadelphia, credentials, services)
+- `src/components/Hero.tsx` — H1 and subtitle with Philadelphia and SEO terms
+- `src/components/Services.tsx` — 5 service cards, new Special Inspections card, renamed Forensic Analysis
+- `src/App.tsx` — About/Credentials section with RDP, LSI, and inspection sub-categories
+- `src/components/Footer.tsx` — New credentials, Philadelphia service area, make-safe permit SEO text
+- `gemini.md` — Updated brand identity, service architecture, credentials, SEO instructions
+- `AI_AGENTS_GUIDE.md` — Updated owner credentials, services, competitive advantage

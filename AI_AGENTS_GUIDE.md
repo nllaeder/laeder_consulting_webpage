@@ -17,7 +17,7 @@ This document provides essential context for AI agents (Claude, Gemini, etc.) wh
 ## 🎯 Project Mission
 
 **Client**: Laeder Consulting - Professional Engineering firm in Central Pennsylvania
-**Owner**: Nicholas Laeder, PE, CGBE, CEM
+**Owner**: Nicholas Laeder, PE, CGBE, CEM — Registered Design Professional & Licensed Special Inspector (Philadelphia)
 **Primary Goal**: Direct lead generation for structural engineering services
 **Target Users**: Contractors, homeowners, real estate professionals needing PE services
 
@@ -64,7 +64,7 @@ App.tsx
 - **Tailwind CSS v4** - Uses new `@theme` syntax (different from v3)
 - **Environment variables** - API endpoints configured via `.env` files
 
-## 🔄 Current Status (Updated 2026-02-15)
+## 🔄 Current Status (Updated 2026-02-16)
 
 ### ✅ COMPLETED FEATURES
 - [x] **Core website** - Fully responsive, production-ready
@@ -73,6 +73,8 @@ App.tsx
 - [x] **API integration** - Ready for VPS authentication
 - [x] **Mobile optimization** - FAB buttons, responsive design
 - [x] **SEO foundation** - Meta tags, structured markup
+- [x] **Philadelphia credentials** - Registered Design Professional & Licensed Special Inspector
+- [x] **Special Inspection service card** - Philadelphia-specific with make-safe permit keywords
 
 ### 🔄 WAITING FOR EXTERNAL WORK
 - [ ] **VPS API Authentication** - Carousel will activate once auth is implemented
@@ -160,13 +162,16 @@ App.tsx
 
 ### Core Services (Never Change)
 1. **Structural & Architectural Engineering** - Residential design, load-bearing modifications
-2. **Forensic Inspections** - Foundation analysis, beam failure assessment
-3. **Accessibility Engineering** - Elevator/lift structural support
-4. **PA DEP SPEED Program** - Environmental compliance inspections
+2. **Special Inspections & Structural Inspections** - Licensed Special Inspector for reinforced concrete, structural stability, underpinning, wood construction, make-safe permits (Philadelphia)
+3. **Forensic Analysis** - Foundation analysis, failure assessment, unpermitted work sign-offs
+4. **Accessibility Engineering** - Elevator/lift structural support
+5. **PA DEP SPEED Program** - Environmental compliance inspections
 
 ### Competitive Advantage
 - **PE License** - Required for stamped engineering drawings
-- **Local expertise** - Central PA building codes and soil conditions
+- **Registered Design Professional** - Licensed to practice in Philadelphia
+- **Licensed Special Inspector** - Authority for special inspections and make-safe permits in Philadelphia
+- **Local expertise** - Central PA building codes and Philadelphia L&I requirements
 - **Residential focus** - Unlike commercial-only engineering firms
 - **Direct access** - No administrative layers, talk to the engineer
 

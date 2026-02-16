@@ -17,11 +17,12 @@ export default function Hero() {
             <div className="container mx-auto px-4 z-10 text-center">
                 <h1 className="text-4xl md:text-6xl font-bold text-brand-green mb-6 tracking-tight">
                     Structural & Forensic Engineering <br />
-                    <span className="text-brand-green/80">in Central Pennsylvania</span>
+                    <span className="text-brand-green/80">Central Pennsylvania & Philadelphia</span>
                 </h1>
                 <p className="text-xl md:text-2xl text-gray-700 max-w-3xl mx-auto mb-10 leading-relaxed font-light">
                     Engineering Clarity. Structural Certainty.<br />
-                    Licensed Professional Engineering for residential design, forensics, and sustainable compliance.
+                    Registered Design Professional providing structural engineering,
+                    special inspections, and forensic analysis.
                 </p>
 
                 <div className="flex flex-col md:flex-row gap-4 justify-center items-center">

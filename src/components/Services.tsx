@@ -2,7 +2,7 @@
 const services = [
     {
         title: "Structural & Architectural",
-        description: "Residential estate design, load-bearing wall removal, floorplan modifications, and settling additions.",
+        description: "Residential design, load-bearing wall removal, floorplan modifications, and settling additions.",
         icon: (
             <svg className="w-12 h-12 text-brand-lime" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
@@ -10,7 +10,17 @@ const services = [
         )
     },
     {
-        title: "Forensic Inspections",
+        title: "Special Inspections & Structural Inspections",
+        description: "Licensed Special Inspector for reinforced concrete, structural stability of existing buildings, underpinning, and wood construction. Make-safe permit inspections and structural assessments in Philadelphia.",
+        icon: (
+            <svg className="w-12 h-12 text-brand-lime" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 14l2 2 4-4" />
+            </svg>
+        )
+    },
+    {
+        title: "Forensic Analysis",
         description: "Professional sign-offs for unpermitted work, foundation movement analysis, and structural failure remediation.",
         icon: (
             <svg className="w-12 h-12 text-brand-lime" fill="none" stroke="currentColor" viewBox="0 0 24 24">

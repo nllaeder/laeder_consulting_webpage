@@ -18,15 +18,15 @@ function App() {
         <section id="about" className="py-20 bg-slate-100 border-t border-slate-200">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl font-bold text-brand-green mb-8">Technical Authority</h2>
-            <div className="max-w-4xl mx-auto bg-white p-8 rounded-2xl shadow-sm border border-slate-200">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center text-left">
+            <div className="max-w-5xl mx-auto bg-white p-8 rounded-2xl shadow-sm border border-slate-200">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start text-left">
                 <div>
-                  <h3 className="text-2xl font-bold mb-4 text-gray-900">Why choose a P.E.?</h3>
+                  <h3 className="text-2xl font-bold mb-4 text-gray-900">Why choose a Licensed Design Professional?</h3>
                   <p className="text-gray-600 mb-4">
-                    Structural issues require more than just a contractor's opinion. They demand engineering precision and legal accountability.
+                    Structural issues require more than just a contractor's opinion. They demand engineering precision and legal accountability. As a Registered Design Professional and Licensed Special Inspector in Philadelphia, we bring the authority to stamp drawings, perform special inspections, and sign off on make-safe permits.
                   </p>
                   <p className="text-gray-600">
-                    We provide the stamped specifications and forensic analysis needed for real estate transactions, insurance claims, and safety compliance.
+                    We provide the stamped specifications and forensic analysis needed for real estate transactions, insurance claims, safety compliance, and Philadelphia L&I requirements.
                   </p>
                 </div>
                 <div className="bg-blueprint p-6 rounded-xl border border-brand-green/10">
@@ -38,11 +38,27 @@ function App() {
                     </li>
                     <li className="flex items-center text-sm font-medium text-gray-700">
                       <span className="w-6 h-6 rounded-full bg-brand-lime/20 text-brand-lime flex items-center justify-center mr-3 text-xs font-bold">✓</span>
-                      Certified Green Building Engineer
+                      Registered Design Professional — Philadelphia
+                    </li>
+                    <li className="flex flex-col">
+                      <div className="flex items-center text-sm font-medium text-gray-700">
+                        <span className="w-6 h-6 rounded-full bg-brand-lime/20 text-brand-lime flex items-center justify-center mr-3 text-xs font-bold">✓</span>
+                        Licensed Special Inspector — Philadelphia
+                      </div>
+                      <ul className="ml-12 mt-2 space-y-1 text-xs text-gray-500">
+                        <li>• Reinforced Concrete</li>
+                        <li>• Structural Stability of Existing Buildings</li>
+                        <li>• Underpinning</li>
+                        <li>• Wood Construction</li>
+                      </ul>
                     </li>
                     <li className="flex items-center text-sm font-medium text-gray-700">
                       <span className="w-6 h-6 rounded-full bg-brand-lime/20 text-brand-lime flex items-center justify-center mr-3 text-xs font-bold">✓</span>
-                      Certified Energy Manager
+                      Certified Green Building Engineer (CGBE)
+                    </li>
+                    <li className="flex items-center text-sm font-medium text-gray-700">
+                      <span className="w-6 h-6 rounded-full bg-brand-lime/20 text-brand-lime flex items-center justify-center mr-3 text-xs font-bold">✓</span>
+                      Certified Energy Manager (CEM)
                     </li>
                   </ul>
                 </div>
