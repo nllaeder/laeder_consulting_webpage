@@ -1,11 +1,14 @@
+import { Routes, Route } from 'react-router-dom';
 import Navigation from './components/Navigation';
 import Hero from './components/Hero';
 import Services from './components/Services';
 import ProjectCarousel from './components/ProjectCarousel';
 import Footer from './components/Footer';
 import MobileContactFab from './components/MobileContactFab';
+import PrivacyPage from './components/PrivacyPage';
+import DataDeletionPage from './components/DataDeletionPage';
 
-function App() {
+function HomePage() {
   return (
     <div className="min-h-screen flex flex-col font-sans">
       <Navigation />
@@ -70,6 +73,16 @@ function App() {
       <Footer />
       <MobileContactFab />
     </div>
+  );
+}
+
+function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/privacy" element={<PrivacyPage />} />
+      <Route path="/data-deletion" element={<DataDeletionPage />} />
+    </Routes>
   );
 }
 

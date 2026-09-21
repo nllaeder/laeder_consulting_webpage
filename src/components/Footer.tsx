@@ -94,7 +94,12 @@ export default function Footer() {
                 </div>
             </div>
             <div className="border-t border-white/10 mt-12 pt-6 text-center text-sm opacity-50">
-                &copy; {new Date().getFullYear()} Laeder Consulting. All rights reserved.
+                <p>&copy; {new Date().getFullYear()} Laeder Consulting. All rights reserved.</p>
+                <p className="mt-2 space-x-4">
+                    <a href="/privacy" className="hover:opacity-100 hover:underline transition-opacity">Privacy Policy</a>
+                    <span>·</span>
+                    <a href="/data-deletion" className="hover:opacity-100 hover:underline transition-opacity">Data Deletion</a>
+                </p>
             </div>
         </footer>
     );
