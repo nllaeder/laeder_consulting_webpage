@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unsafe Structure Triage Guide | Laeder Consulting</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f4f4f9; padding: 20px; color: #333; }
+        .container { max-width: 500px; margin: 0 auto; background: white; padding: 30px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        h1 { color: #2c3e50; font-size: 24px; }
+        p { line-height: 1.5; color: #666; }
+        .form-group { margin-bottom: 15px; }
+        label { display: block; margin-bottom: 5px; font-weight: bold; }
+        input[type="text"], input[type="email"], input[type="tel"] {
+            width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;
+        }
+        button {
+            width: 100%; padding: 15px; background-color: #0056b3; color: white; border: none;
+            border-radius: 4px; font-size: 16px; font-weight: bold; cursor: pointer; margin-top: 10px;
+        }
+        button:hover { background-color: #004494; }
+        #success-message { display: none; color: green; font-weight: bold; margin-top: 20px; text-align: center;}
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Get the Triage Guide</h1>
+    <p>Enter your contact information below to receive the free 4-step Unsafe Structure Triage Guide.</p>
+
+    <form id="triageForm">
+        <!-- Hidden input to hold the UUID from the URL -->
+        <input type="hidden" id="lead_id" name="lead_id">
+
+        <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email">
+        </div>
+
+        <div class="form-group">
+            <label for="phone">Phone Number (Optional)</label>
+            <input type="tel" id="phone" name="phone">
+        </div>
+
+        <button type="submit" id="submitBtn">Download Guide</button>
+    </form>
+
+    <div id="success-message">
+        <p>Success! The guide has been sent to your email.</p>
+    </div>
+</div>
+
+<script>
+    // 1. Grab the UUID from the URL (e.g., ?id=1234-uuid)
+    const urlParams = new URLSearchParams(window.location.search);
+    const leadId = urlParams.get('id');
+    
+    // Put the UUID into the hidden form field so n8n knows who this is
+    if(leadId) {
+        document.getElementById('lead_id').value = leadId;
+    }
+
+    // 2. Handle the Form Submission
+    document.getElementById('triageForm').addEventListener('submit', function(e) {
+        e.preventDefault(); // Stop the page from reloading
+        
+        const btn = document.getElementById('submitBtn');
+        btn.innerText = 'Sending...';
+        btn.disabled = true;
+
+        // Gather the data
+        const payload = {
+            lead_id: document.getElementById('lead_id').value,
+            name: document.getElementById('name').value,
+            email: document.getElementById('email').value,
+            phone: document.getElementById('phone').value
+        };
+
+        // 3. Send to n8n Webhook (REPLACE THIS URL WITH YOUR N8N PRODUCTION URL)
+        fetch('https://YOUR-N8N-URL/webhook/triage-lead', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(payload)
+        })
+        .then(response => {
+            // Hide the form, show the success message
+            document.getElementById('triageForm').style.display = 'none';
+            document.getElementById('success-message').style.display = 'block';
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            btn.innerText = 'Error. Try Again.';
+            btn.disabled = false;
+        });
+    });
+</script>
+
+</body>
+</html>
